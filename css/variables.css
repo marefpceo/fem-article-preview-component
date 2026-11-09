@@ -56,6 +56,9 @@
 --radius-sm: 0.625rem;      /*  10px  */
 
 /* Theme variables */
+--body-bg: var(--grey-200);
 
+--text-heading: var(--grey-900);
+--text-body: var(--grey-500);
 }
 

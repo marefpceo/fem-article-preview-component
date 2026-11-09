@@ -1,0 +1,5 @@
+.article-image {
+  height: 200px;
+  max-width: revert;
+  object-fit: cover;
+}

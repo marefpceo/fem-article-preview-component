@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  background-color: var(--white-custom);
+  border-radius: var(--radius-sm);
+
+  width: 100%;
+  max-width: 20.4375rem;
+
+  overflow: hidden;
+
+  & .text-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+  }
+}
