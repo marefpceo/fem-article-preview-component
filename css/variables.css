@@ -60,5 +60,10 @@
 
 --text-heading: var(--grey-900);
 --text-body: var(--grey-500);
+
+--text-date: var(--grey-400);
+
+--share-btn-bg: var(--grey-200);
+--share-btn-bg-dark: var(--grey-500);
 }
 

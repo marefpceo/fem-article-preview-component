@@ -1,0 +1,7 @@
+.share-button.dark-button {
+  background-color: var(--share-btn-bg-dark);
+  
+  & img {
+    color: var(--white-custom);
+  }
+}

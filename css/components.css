@@ -3,3 +3,48 @@
   max-width: revert;
   object-fit: cover;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-800);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+}
+
+.profile-name-block {
+  display: flex;
+  flex-direction: column;
+
+  & .name {
+    color: var(--text-heading);
+    font-weight: var(--fw-bold);
+  }
+
+  & .date {
+    color: var(--text-date);
+  }
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--share-btn-bg);
+  width: var(--spacing-400);
+  height: var(--spacing-400);
+
+  border-radius: 100%;
+  
+}
