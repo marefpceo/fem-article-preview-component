@@ -2,6 +2,6 @@
   background-color: var(--share-btn-bg-dark);
   
   & img {
-    color: var(--white-custom);
+    filter: brightness(0) invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
   }
 }
