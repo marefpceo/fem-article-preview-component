@@ -50,7 +50,7 @@
 }
 
 .share-toast {
-  display: flex;
+  display: none;
   align-items: center;
   gap: var(--spacing-800);
   position: absolute;
