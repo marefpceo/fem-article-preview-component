@@ -9,6 +9,7 @@ body {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,4 +34,9 @@ p {
   font-weight: var(--fw-medium);
   line-height: var(--line-4);
   letter-spacing: var(--tracking-tight);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }

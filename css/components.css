@@ -48,3 +48,32 @@
   border-radius: 100%;
   
 }
+
+.share-toast {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-800);
+  position: absolute;
+  background-color: var(--share-toast-bg);
+  color: var(--text-date);
+  padding: var(--spacing-200) var(--spacing-400);
+    
+  width: 100%;
+  bottom: 0;
+  z-index: 5;
+
+  border-bottom-left-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+}
+
+.share-icon-div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+
+.share-icon-frame {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
