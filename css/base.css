@@ -17,6 +17,11 @@ main {
   gap: var(--spacing-600);
   color: var(--text-body);
   padding: 0 var(--spacing-300) var(--spacing-200);
+
+  @media (min-width: 48rem) {
+    gap: var(--spacing-300);
+    padding: var(--spacing-300) var(--spacing-600) var(--spacing-300) 0;
+  }
 }
 
 /* Text Preset 1 */

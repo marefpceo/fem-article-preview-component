@@ -15,4 +15,10 @@
     flex-direction: column;
     gap: var(--spacing-300);
   }
+
+  @media (min-width: 48rem) {
+    flex-direction: row;
+
+    max-width: 38rem;
+  }
 }

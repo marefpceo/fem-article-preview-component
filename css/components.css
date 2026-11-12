@@ -1,7 +1,14 @@
 .article-image {
-  height: 200px;
+  width: 20.4375;
+  height: 12.5rem;
   max-width: revert;
   object-fit: cover;
+  object-position: center;
+
+  @media (min-width: 48rem) {
+    width: 14.3125rem;
+    height: 21.625rem;
+  };
 }
 
 .button-group {
@@ -50,7 +57,7 @@
 }
 
 .share-toast {
-  display: none;
+  display: flex;
   align-items: center;
   gap: var(--spacing-800);
   position: absolute;
@@ -64,6 +71,16 @@
 
   border-bottom-left-radius: var(--radius-sm);
   border-bottom-right-radius: var(--radius-sm);
+
+  @media (min-width: 48rem) {
+    width: 15.5rem;
+    height: 4.1875rem;
+
+    border-radius: var(--radius-sm);
+    
+    top: 180px;
+    left: 135px;
+  }
 }
 
 .share-icon-div {
