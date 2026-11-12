@@ -3,10 +3,14 @@ const openShare = document.getElementById('openShare');
 const closeShare = document.getElementById('closeShare');
 
 
-openShare.addEventListener('click', () => {
-  toast.style.display = 'flex'
-});
+function toggleShare() {
+  if (toast.style.display === 'none') {
+    toast.style.display = 'flex';
+  } else {
+    toast.style.display = 'none';
+  }
+};
 
-closeShare.addEventListener('click', () => {
-  toast.style.display = 'none';
-});
+
+openShare.addEventListener('click', toggleShare);
+closeShare.addEventListener('click', toggleShare);
