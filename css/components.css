@@ -4,10 +4,16 @@
   max-width: revert;
   object-fit: cover;
   object-position: center;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  
 
   @media (min-width: 48rem) {
     width: 14.3125rem;
     height: 21.625rem;
+
+    border-top-right-radius: 0;
+    border-bottom-left-radius: inherit;
   };
 }
 
