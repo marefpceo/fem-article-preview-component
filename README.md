@@ -16,8 +16,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot of tablet view](./assets/images/screenshot.png)
 
 ### Links
 
@@ -43,12 +41,34 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Javascript
 
 ### What I learned
 
+This challenge was a good refresher on using vanilla Javascript with a website. No new concepts were introduced, but I did make use of the `element.classList.toggle()` method. A method that I haven't used before. The method was used to toggle the visibility state of a share button and share toast. 
+
+Using the method was quite easy. It required me to create a `.hidden` utility class with the display set to none. 
+
+```css
+.hidden {
+  display: none;
+}
+```
+Next I applied the class based on the initial visibility state. As shown below, the `toast`'s initial state is hidden, so the `.hidden` class is applied. If the initial state was to show the `toast`, then the `.hidden` class would simply be removed.
+```html
+<!-- Initial state hide toast -->
+<div class='share-toast toast-shadow hidden' id='toast'>
+  <!-- div contents -->
+</div>
+
+<!-- Initial state show toast -->
+<div class='share-toast toast-shadow' id='toast'>
+  <!-- div contents -->
+</div>
+```
+
+With the class applied to the div, an event listener can be assigned to the share button so that every time the share button is clicked, the event will be fired. 
 
 ### Continued development
 
@@ -63,5 +83,3 @@ Users should be able to:
 - Website - [Lamar S.](https://www.lamar-stevens.com)
 - Frontend Mentor - [@marefpceo](https://www.frontendmentor.io/profile/marefpceo)
 - Twitter - [@stevens14704](https://www.twitter.com/stevens14704)
-
-## Acknowledgments
