@@ -1,3 +1,11 @@
+.container-shadow {
+  box-shadow: 0 2.5rem 2.5rem -0.625rem hsla(210deg, 29%, 84%, 0.502);
+}
+
+.toast-shadow {
+  box-shadow: 0 0.625rem 0.625rem 0 hsla(210deg, 29%, 84%, 0.502);
+}
+
 .share-button.dark-button {
   background-color: var(--share-btn-bg-dark);
   
