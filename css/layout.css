@@ -8,8 +8,6 @@
   width: 100%;
   max-width: 20.4375rem;
 
-  /* overflow: hidden; */
-
   & .text-block {
     display: flex;
     flex-direction: column;
@@ -18,7 +16,11 @@
 
   @media (min-width: 48rem) {
     flex-direction: row;
-
     max-width: 38rem;
+  }
+
+  @media (min-width: 90rem) {
+    max-width: 45.625rem;
+    gap: var(--spacing-500);
   }
 }
