@@ -88,7 +88,7 @@
     border-radius: var(--radius-sm);
     
     top: 11.25rem;
-    left: 8.5625rem;
+    left: 9.5625rem;
 
     /* Inverted arrow for text bubble */
     &::after {
@@ -103,6 +103,11 @@
       border-bottom: 0;
       margin-bottom: -0.75rem;
     }
+  }
+
+  @media (min-width: 90rem) {
+    top: 8.125rem;
+    left: 13.125rem;
   }
 }
 
