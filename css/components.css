@@ -57,9 +57,7 @@
   background-color: var(--share-btn-bg);
   width: var(--spacing-400);
   height: var(--spacing-400);
-
   border-radius: 100%;
-  
 }
 
 .share-toast {
@@ -80,12 +78,25 @@
 
   @media (min-width: 48rem) {
     width: 15.5rem;
-    height: 4.1875rem;
-
+    height: 3.4375rem;
     border-radius: var(--radius-sm);
     
-    top: 180px;
-    left: 135px;
+    top: 11.25rem;
+    left: 8.5625rem;
+
+    /* Inverted arrow for text bubble */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 7.3125rem;
+      width: 0;
+      height: 0;
+      border: 0.75rem solid transparent;
+      border-top-color: var(--share-toast-bg);
+      border-bottom: 0;
+      margin-bottom: -0.75rem;
+    }
   }
 }
 
